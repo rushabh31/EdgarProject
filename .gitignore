@@ -1,0 +1,5 @@
+edgar-venv/
+*.ipynb
+__pycache__
+**/__pycache__
+**/*.[cC][sS][vV]*
