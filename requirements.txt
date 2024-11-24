@@ -94,3 +94,5 @@ urllib3==2.2.3
 wcwidth==0.2.13
 xxhash==3.5.0
 yarl==1.18.0
+pre-commit==4.0.1
+git+https://github.com/langchain-ai/langchain.git@master#subdirectory=libs/community
