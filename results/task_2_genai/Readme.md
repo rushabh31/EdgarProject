@@ -47,9 +47,19 @@ The task follows a structured workflow:
 #### d. **Create a Prompt**
 - A specialized prompt instructs the LLM to focus on the given year's context and answer the query concisely:
   ```
-  You are an assistant specialized in analyzing 10-K filings for the year {year}. Using the provided context, extract the precise answer and ignore external data.
+  You are an assistant specialized in answering questions from 10-K SEC financial reports using a Retrieval Augmented Generation (RAG) system.
+  Your role is to focus exclusively on financial reports from {year}, leveraging the provided context.
+  Base your response solely on the given context, and refrain from using external information.
+  
+  **Task Instructions:**
+  - Extract the precise answer based on the provided context.
+  - Ensure that the response is concise and accurate.
+  - Format the response as JSON and include only the requested fields.
+
   **Question:** {query}
-  **Context:** {chunks}
+  **Context:** {context}
+
+  **Response (in JSON format):**
   ```
 
 #### e. **Validation Dataset**
