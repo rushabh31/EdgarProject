@@ -82,23 +82,31 @@ Demonstrate the ability of a language model to extract specific attributes from 
 ## **Project Structure**
 ```plaintext
 ├── code/
-│   ├── task_1.py
-│   ├── task_2.py
+│   ├── task_1_engineering.py
+│   ├── task_2_genai.py
 ├── logs/
-│   ├── task_1.log
-│   ├── task_2.log
+│   ├── task_1_execution.log
+│   ├── task_2_execution.log
 ├── results/
-│   ├── task_1/
+│   ├── task_1_engineering/
 │   │   ├── Embeddings_in_2_Dimensions.png
 │   │   ├── Embeddings_in_2D_Colored_by_Cluster.png
 |   |   ├── Embeddings_in_2D_Colored_by_Outlier_Flag.png
 │   │   └── Embeddings_in_2D_Colored_by_Section.png
-│   ├── task_2/
+│   │   └── Cluster_Visualization_with_Boundaries.png
+│   │   └── Cluster_Visualization_with_Boundaries_Colored_by_Section.png
+│   │   └── Readme.md
+│   ├── task_2_genai/
 │   │   ├── output.json
+│   │   └── Readme.md
 ├── docs/
-│   ├── task_1.md
-│   ├── task_2.md
+│   ├── task_1_engineering.md
+│   ├── task_2_genai.md
 │   └── setup_guide.md
+├── .gitignore
+├── Makefile
+├── .ruff.toml
+├── .pre-commit-config.yaml
 └── README.md
 ```
 
