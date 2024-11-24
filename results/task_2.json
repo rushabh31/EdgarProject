@@ -1,0 +1,83 @@
+{
+  "How many total employees does Apple have?": {
+    "answer": "In the year 2020, Apple had approximately 147,000 full-time equivalent employees.",
+    "chunks": [
+      {
+        "metadata": {
+          "chunk_number": 42,
+          "section_number": "1",
+          "year": "2020"
+        },
+        "content": "Employees\nAs of September 26, 2020, the Company had approximately 147,000 full-time equivalent employees.\nAvailable Information"
+      }
+    ]
+  },
+  "How much Total net sales increased from previous year in percent and in dollars?": {
+    "answer": "increase of 6% or $14.3 billion,",
+    "chunks": [
+      {
+        "metadata": {
+          "chunk_number": 12,
+          "section_number": "7",
+          "year": "2020"
+        },
+        "content": "Fiscal 2020 Highlights\nTotal net sales increased 6% or $14.3 billion during 2020 compared to 2019, primarily driven by higher net sales of Services and Wearables, Home and Accessories. The weakness in foreign currencies had an unfavorable impact on net sales during 2020."
+      },
+      {
+        "metadata": {
+          "chunk_number": 23,
+          "section_number": "7",
+          "year": "2020"
+        },
+        "content": "The following table shows net sales by reportable segment for 2020, 2019 and 2018 (dollars in millions):\nAmericas\nAmericas net sales increased during 2020 compared to 2019 due primarily to higher net sales of Services and Wearables, Home and Accessories. The weakness in foreign currencies relative to the U.S. dollar had an unfavorable impact on Americas net sales during 2020.\nEurope"
+      }
+    ]
+  },
+  "How did overall iPhone sales compare to the previous year? Did they increase or decrease?": {
+    "answer": "decreased",
+    "chunks": [
+      {
+        "metadata": {
+          "chunk_number": 17,
+          "section_number": "7",
+          "year": "2020"
+        },
+        "content": "iPhone\niPhone net sales decreased during 2020 compared to 2019 due primarily to the absence of new iPhone models in the fourth quarter of 2020 and the weakness in foreign currencies relative to the U.S. dollar, partially offset by the introduction of iPhone SE in the third quarter of 2020.\nMac\nMac net sales increased during 2020 compared to 2019 due primarily to higher net sales of MacBook Pro.\niPad"
+      }
+    ]
+  },
+  "What are the exact values of the company's net deferred tax assets and deferred tax liabilities?": {
+    "answer": "[11.0, 2.8]",
+    "chunks": [
+      {
+        "metadata": {
+          "chunk_number": 36,
+          "section_number": "7",
+          "year": "2020"
+        },
+        "content": "As of September 26, 2020, the Company had net deferred tax assets arising from deductible temporary differences and tax credits of $11.0 billion and deferred tax liabilities of $2.8 billion. Management believes it is more likely than not that forecasted income, including income that may be generated as a result of certain tax planning strategies, together with future reversals of existing taxable temporary differences, will be sufficient to recover the net deferred tax assets. The Company will continue to"
+      }
+    ]
+  },
+  "What was the amount of the company's quarterly cash dividend per share?": {
+    "answer": "0.205",
+    "chunks": [
+      {
+        "metadata": {
+          "chunk_number": 58,
+          "section_number": "7",
+          "year": "2020"
+        },
+        "content": "As of September 26, 2020, the Company\u2019s quarterly cash dividend was $0.205 per share. The Company intends to increase its dividend on an annual basis, subject to declaration by the Board of Directors.\nContractual Obligations\nThe following table presents certain payments due by the Company as of September 26, 2020, and includes amounts already recorded on the Consolidated Balance Sheet, except for manufacturing purchase obligations, other purchase obligations and certain lease obligations (in millions):"
+      },
+      {
+        "metadata": {
+          "chunk_number": 13,
+          "section_number": "7",
+          "year": "2020"
+        },
+        "content": "In April 2020, the Company announced an increase to its current share repurchase program authorization from $175 billion to $225 billion and raised its quarterly dividend from $0.1925 to $0.205 per share beginning in May 2020. During 2020, the Company repurchased $72.5 billion of its common stock and paid dividends and dividend equivalents of $14.1 billion."
+      }
+    ]
+  }
+}
