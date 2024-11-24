@@ -1,6 +1,6 @@
 SHELL:=/bin/bash
 VENV_NAME:=edgar-test-venv
-OUTLINES_PY := $(VENV_DIR)/lib/python3.10/site-packages/langchain_community/llms/outlines.py
+OUTLINES_PY := $(VENV_NAME)/lib/python3.10/site-packages/langchain_community/llms/outlines.py
 
 ## ----------------------------------------------------------------------
 ## Makefile with recipes
@@ -9,7 +9,7 @@ OUTLINES_PY := $(VENV_DIR)/lib/python3.10/site-packages/langchain_community/llms
 help:	## Show help.
 	@sed -ne '/@sed/!s/## //p' $(MAKEFILE_LIST)
 
-all: venv install_langchain_community modify_outlines
+all: venv modify_outlines
 
 ########################################################
 # Local developement recipes
@@ -27,11 +27,16 @@ venv:	## Create python environment, install pre-commit hooks, install dbt dps, a
 	source $(VENV_NAME)/bin/activate; \
 	pip install wheel;\
 	pip install -r requirements.txt; \
-	pip install git+https://github.com/langchain-ai/langchain.git@master#subdirectory=libs/community \
 	pre-commit install; \
 	python -m ipykernel install --name $(VENV_NAME) --display-name $(VENV_NAME) --user;
 
 # Modify the specific line in outlines.py
-modify_outlines: install_langchain_community
-	source $(VENV_NAME)/bin/activate; 
-	sed -i.bak 's/self.client = models.transformers(self.model, **self.model_kwargs)/self.client = models.transformers(self.model, device='\''auto'\'', **self.model_kwargs)/' $(OUTLINES_PY)
+modify_outlines:  venv ## Modify outlines.py.
+	@source $(VENV_NAME)/bin/activate && \
+	if [ -f "$(OUTLINES_PY)" ]; then \
+		sed -i.bak "s/self.client = models.transformers(self.model, \*\*self.model_kwargs)/self.client = models.transformers(self.model, device='auto', \*\*self.model_kwargs)/" $(OUTLINES_PY); \
+		echo "Modified $(OUTLINES_PY) successfully."; \
+	else \
+		echo "Error: $(OUTLINES_PY) not found."; \
+		exit 1; \
+	fi
