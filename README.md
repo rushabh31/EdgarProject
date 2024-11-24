@@ -1,5 +1,3 @@
-# Repository: Document Analysis and Generative AI Tasks
-
 ## Overview
 This repository contains implementations of two tasks focused on document understanding and generative AI. Both tasks involve processing financial documents (10-K filings) to extract insights and provide actionable results. The repository is structured to include code, logs, results, and documentation for each task.
 
