@@ -1,5 +1,5 @@
 SHELL:=/bin/bash
-VENV_NAME:=edgar-test-venv
+VENV_NAME:=edgar-venv
 OUTLINES_PY := $(VENV_NAME)/lib/python3.10/site-packages/langchain_community/llms/outlines.py
 
 ## ----------------------------------------------------------------------
